@@ -1,0 +1,55 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  max-width: 900px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  width: 300px;
+}
+
+#name-label {
+  
+}
+
+#name {
+  display: inline-block;
+  left: 5%;
+}
+
+#name:focus {
+  border: 1px solid dodgerblue;
+}
+
+body {
+  background-color: rgb(112, 182, 155);
+}
+
+#dropdown,
+.like-list {
+  list-style: none;
+}
+
+.comment {
+  max-width: 200px
+}
