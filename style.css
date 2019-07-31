@@ -10,31 +10,57 @@ body {
   text-align: center;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+#description {
+  margin-top: 0;
+}
+
 .form {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   background-color: white;
-  max-width: 900px;
   border-radius: 10px;
-  margin: 0 auto;
+  margin: 10px 20px;
+  padding: 15px;
 }
 
 #survey-form {
   display: flex;
   flex-direction: column;
   margin: 0 20px;
-  width: 300px;
+  width: 90%;
 }
 
-#name-label {
-  
-}
-
-#name {
+#name-label,
+#email-label,
+#number-label,
+.gender-label,
+.rating,
+.like-text,
+.comment-label {
   display: inline-block;
-  left: 5%;
+  text-align: right;
+  margin-right: 8px;
+  width: 40%;
+}
+
+#name,
+#email,
+#number {
+  width: 35%;
+}
+
+.rating,
+.like-text,
+.comment {
+  vertical-align: top;
 }
 
 #name:focus {
@@ -47,9 +73,34 @@ body {
 
 #dropdown,
 .like-list {
+  display: inline-block;
   list-style: none;
+  padding-left: 0; 
 }
 
 .comment {
-  max-width: 200px
+  margin-top: 16px;
+  width: 35%;
+  max-width: 35%;
+  min-width: 35%;
+  height: 100px;
+}
+
+.name-section,
+.email-section,
+.age-section,
+.gender-section,
+.gender-section,
+.like-section,
+.comment-section {
+  margin-bottom: 15px;
+}
+
+#submit {
+  margin: 0 auto;
+  width: 100px;
+  background-color: rgb(66, 159, 251);
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 5px;
+  padding: 10px;
 }
