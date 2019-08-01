@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro&display=swap');
+
 html,
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+body {
+  background-color: rgb(112, 182, 155);
 }
 
 #title {
@@ -19,6 +26,8 @@ body {
 
 #description {
   margin-top: 0;
+  text-align: center;
+  font-size: 16px;
 }
 
 .form {
@@ -57,21 +66,30 @@ body {
   width: 35%;
 }
 
+#name,
+#email,
+#number,
+#dropdown,
+.comment {
+  border-radius: 4px;
+  padding: 3px 5px;
+  border: 1px solid #ccc;
+}
+
 .rating,
 .like-text,
 .comment {
   vertical-align: top;
 }
 
-#name:focus {
+#name:focus,
+#email:focus,
+#number:focus,
+#dropdown:focus {
   border: 1px solid dodgerblue;
 }
 
-body {
-  background-color: rgb(112, 182, 155);
-}
-
-#dropdown,
+#rating-list,
 .like-list {
   display: inline-block;
   list-style: none;
@@ -80,10 +98,10 @@ body {
 
 .comment {
   margin-top: 16px;
-  width: 35%;
   max-width: 35%;
   min-width: 35%;
-  height: 100px;
+  max-height: 150px;
+  min-height: 150px;
 }
 
 .name-section,
@@ -103,4 +121,41 @@ body {
   border: 1px solid rgb(172, 172, 172);
   border-radius: 5px;
   padding: 10px;
+}
+
+@media (max-width: 500px) {
+  #name-label,
+  #email-label,
+  #number-label,
+  .gender-label,
+  .rating,
+  .like-text,
+  .comment-label {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+
+  #survey-form {
+    width: 80%;
+  }
+
+  #name,
+  #email,
+  #number {
+    width: 90%;
+  }
+
+  .comment {
+    margin-top: 0;
+    max-width: 90%;
+    min-width: 90%;
+    max-height: 150px;
+    min-height: 150px;
+  }
+
+  #rating-list,
+  .like-list {
+    margin: 0;
+  }
 }
