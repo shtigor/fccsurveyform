@@ -82,10 +82,19 @@ body {
   vertical-align: top;
 }
 
+#name:hover,
+#email:hover,
+#number:hover,
+#dropdown:hover,
+.comment:hover {
+  border: 1px solid rgb(138, 197, 255);
+}
+
 #name:focus,
 #email:focus,
 #number:focus,
-#dropdown:focus {
+#dropdown:focus,
+.comment:focus {
   border: 1px solid dodgerblue;
 }
 
@@ -121,7 +130,17 @@ body {
   border: 1px solid rgb(172, 172, 172);
   border-radius: 5px;
   padding: 10px;
+  color: white;
 }
+
+#submit:hover {
+  background-color: rgb(116, 174, 231);
+}
+
+#submit:hover:active {
+  background-color: rgb(46, 128, 211);
+}
+
 
 @media (max-width: 500px) {
   #name-label,
